@@ -1,1 +1,49 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lamp{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border: 12px solid black;
+  border-radius: 50%;
+}
+.lamp::before{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 80px;
+  background-color: black;
+  border: 5px solid white;
+  left: 62px;
+  top: -30px
+}
+.lamp::after{
+  position: absolute ;
+  content:"";
+  width: 230px;
+  height: 230px;
+  background-color:white;
+  border: 2px solid black;
+  z-index: -1;
+  top: -45px;
+  left: -42px
+}
 
